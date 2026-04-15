@@ -1,0 +1,8 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=09aprcapgeminicu84f0;AccountKey=KcJBA1k02wYZ2sC2TDaRu5b9+lJ1lIGRKHeEnAdg29X1bm+8NBvtOcuG+272gziJZtT0p2XwD9m5+ASt4hE9Cg==;EndpointSuffix=core.windows.net",
+    "AzureSqlDatabase": "Server=UDITA\\SQLEXPRESS;Database=AzureFundamentals;TrustServerCertificate=True;Trusted_Connection=True;",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated"
+  }
+}
