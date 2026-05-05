@@ -1,0 +1,172 @@
+https://www.asciiart.eu/gallery 
+
+
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/MyWebsite2 (Images)
+$ cd ..
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d
+$ git clone https://github.com/raghuponde/Website3.git
+Cloning into 'Website3'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (9/9), done.
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d
+$ cd Website3
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (main)
+$ git branch
+* main
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (main)
+$ git branch -r
+  origin/Animals
+  origin/HEAD -> origin/main
+  origin/cartoons
+  origin/main
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (main)
+$ code .
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (main)
+$ git switch Animals
+Switched to a new branch 'Animals'
+branch 'Animals' set up to track 'origin/Animals'.
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (Animals)
+$ git branch
+* Animals
+  main
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (Animals)
+$ code .
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (Animals)
+$ git switch cartoons
+Switched to a new branch 'cartoons'
+branch 'cartoons' set up to track 'origin/cartoons'.
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (cartoons)
+$ git branch
+  Animals
+* cartoons
+  main
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (cartoons)
+$ code .
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (cartoons)
+$ git branch
+  Animals
+* cartoons
+  main
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (cartoons)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (main)
+$ git branch
+  Animals
+  cartoons
+* main
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (main)
+$ git branch -r
+  origin/Animals
+  origin/HEAD -> origin/main
+  origin/cartoons
+  origin/main
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (main)
+$ git fetch
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 966 bytes | 87.00 KiB/s, done.
+From https://github.com/raghuponde/Website3
+ * [new branch]      clothing   -> origin/clothing
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (main)
+$ git branch -r
+  origin/Animals
+  origin/HEAD -> origin/main
+  origin/cartoons
+  origin/clothing
+  origin/main
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (main)
+$ git switch clothing
+Switched to a new branch 'clothing'
+branch 'clothing' set up to track 'origin/clothing'.
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (clothing)
+$ code .
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (clothing)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (main)
+$ git pull origin clothing
+From https://github.com/raghuponde/Website3
+ * branch            clothing   -> FETCH_HEAD
+Updating 30b491b..d6b3e38
+Fast-forward
+ frock.txt | 6 ++++++
+ 1 file changed, 6 insertions(+)
+ create mode 100644 frock.txt
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (main)
+$ code .
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (main)
+$ git fetch
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (6/6), 1.99 KiB | 127.00 KiB/s, done.
+From https://github.com/raghuponde/Website3
+   30b491b..9b32db6  main       -> origin/main
+   1332d17..58d03c4  Animals    -> origin/Animals
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (main)
+$ git pull origin Animals
+From https://github.com/raghuponde/Website3
+ * branch            Animals    -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+ camel.txt    | 17 +++++++++++++++++
+ elephant.txt | 13 +++++++++++++
+ 2 files changed, 30 insertions(+)
+ create mode 100644 camel.txt
+ create mode 100644 elephant.txt
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/Website3 (main)
+$
+
+Here what is happening is that i am not seeing  the changes in master like earlier it will not open with all links like accept chnages and use both merge etc 
+
+so individually u have to write git pull origin main and then agiain code . then vs code will pop up and then commit button u have to do like for individual page it will 
+work okay .
+
+  
+
+
+
+here first cartoons and Animals i will add some pics and in main file nomal text and later on clothing branch added git fetch and git pull i am doing first fast forward and then after doing change in main and adding some more image in some branch and then again doing pull from main then confilet it will tell again go to file and 
+resolve conflict as it is not fas forward merge okay 
+
